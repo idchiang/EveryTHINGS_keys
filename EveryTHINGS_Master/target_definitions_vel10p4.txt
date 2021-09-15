@@ -1,0 +1,65 @@
+##########################################################################
+# TARGET DEFINITION KEY
+##########################################################################
+
+# Key to define the targets in a project.
+
+# In the ms_key each measurement set is mapped to a target. This key
+# defined targets according to their phase center, systemic velocity
+# and velocity width. These are used in processing the u-v data and
+# then imaging the data.
+
+# The syntax for the key is space or tab delimited:
+
+# Column 1: target name
+# Column 2: phase center r.a. string
+# Column 3: phase center dec string
+# Column 4: source velocity [km/s]
+# Column 5: velocity width [km/s]
+
+# Note that the phase center isn't the same as the object center. This
+# is an importnat distinction mainly in the case of mosaics that cover
+# only part of the object (our linear mosaic cases..
+
+# PHANGS-ALMA examples:
+
+#circinus     14h13m10.0s   -65d20m21s    429    700
+#circinus_1   14h12m58.4s   -65d21m43s    429    700
+#circinus_2   14h13m17.1s   -65d19m24s    429    700
+#ic1954       03h31m31.4s   -51d54m17s    1062   500
+#ngc3621      11h18m16.5s   -32d48m51s    730    700
+#ngc3621_1    11h18m18.3s   -32d49m47s    730    700
+#ngc3621_2    11h18m15.0s   -32d48m06s    730    700
+
+##########################################################################
+
+# DELETE AFTER HERE FOR NEW PROJECT, FULL PHANGS-ALMA CASE FOLLOWS
+
+# Spectral mosaic
+# NGC1961_1	5h42m4.8s	69d22m43.2s	3585.0	200
+# NGC1961_2	5h42m4.8s	69d22m43.2s	3785.0	200
+# NGC1961_3	5h42m4.8s	69d22m43.2s	3985.0	200
+# NGC1961_4	5h42m4.8s	69d22m43.2s	4185.0	200
+# NGC1961_5	5h42m4.8s	69d22m43.2s	4335.0	100
+# NGC1961	5h42m4.8s	69d22m43.2s	3935.0	900
+
+# 0th order cont
+# NGC3596	11h15m6.2s	14d47m13.4s	1188.9	200  # original
+# NGC3596	11h15m6.2s	14d47m13.4s	1188.9	250  # too wide
+NGC3596	11h15m6.2s	14d47m13.4s	1188.9	210
+NGC3640	11h21m6.9s	3d14m5.3s	1314.8	600
+NGC3953	11h53m49.0s	52d19m36.1s	1051.0	500
+NGC4030	12h0m23.6s	-1d6m0.3s	1461.8	450
+NGC4380	12h25m22.1s	10d1m0.5s	951.1	400
+NGC4450	12h28m29.5s	17d5m5.6s	1954.2	400
+NGC4568	12h36m34.3s	11d14m20.0s	2236.2	400
+NGC4654	12h43m56.6s	13d7m36.2s	1046.3	350
+NGC4689	12h47m45.6s	13d45m45.8s	1608.6	300
+NGC7479	23h4m56.7s	12d19m22.1s	2380.5	450
+
+# NGC4651: 1st order cont in archival C;
+# NGC4651	12h43m42.7s	16d23m36.6s	799.8	450  # Good contsub. Little edge HI (Guessing 30kms)
+NGC4651	12h43m42.7s	16d23m36.6s	799.8	520
+# For full spectral range
+# NGC4651	12h43m42.7s	16d23m36.6s	799.8	2500
+

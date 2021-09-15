@@ -1,0 +1,67 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: galaxy, datatype: string}
+# - {name: dist, unit: Mpc, datatype: float32}
+# - {name: dist_unc, unit: dex, datatype: float32}
+# - {name: dist_label, datatype: string}
+# - {name: dist_ref, datatype: string}
+# delimiter: ','
+# meta: !!omap
+# - keywords: {date_updated: '2020-01-25', delimiter: ','}
+# - comments: [
+# This is the distance table read in to the PHANGS sample table,
+# The table records distance uncertainty method and reference,
+# The start of this table descends from sample table v1p4,
+# N.B. the units of uncertainty are dex (i.e. log),
+# ]
+# schema: astropy-2.0
+galaxy,dist
+IC342,3.45
+IC342_1,3.45
+IC342_2,3.45
+IC342_3,3.45
+IC342_4,3.45
+IC342_5,3.45
+NGC1961,59.92
+NGC2787,7.48
+NGC3147,39.8
+NGC3227,26.4
+NGC3596,10.1
+NGC3608,22.9
+NGC3631,18.0
+NGC3640,27.0
+NGC3898,22.1
+NGC3941,12.2
+NGC3953,17.1
+NGC4030,19.0
+NGC4038,22.0
+NGC4051,17.1
+NGC4125,23.9
+NGC4244,4.29
+NGC4365,23.1
+NGC4374,18.5
+NGC4380,16.8
+NGC4450,16.8
+NGC4477,16.8
+# NGC4486,16.7
+NGC4494,14.8
+NGC4496A,14.9
+NGC4501,16.8
+NGC4535,15.8
+NGC4552,16.0
+NGC4568,16.8
+NGC4596,16.8
+NGC4636,14.7
+NGC4649,16.4
+NGC4651,16.8
+NGC4654,16.8
+NGC4689,16.8
+NGC4772,15.6
+NGC4941,14.0
+NGC5427,27.0
+NGC5728,24.8
+NGC7479,31.5
+
+# DIST_MPC, round(2)
+

@@ -1,0 +1,78 @@
+##########################################################################
+# DIRECTORY MAPPING KEY
+##########################################################################
+
+# Key to map from target to working directory name.
+
+# BY DEFAULT the working directory for any target is a directory with
+# the same name as the target. The programs will create this directory
+# in the imaging, postprocessing, etc. directories.
+
+# This key allows targets to be mapped to other directories.
+
+# The most common use is to combine several targets into a single
+# directory. This comes up for PHANGS-ALMA in the context of linear
+# mosaics. Several targets are observed and then larter combined into
+# a single data cube. Thus we prefer to image and process these parts
+# together in a single directory.
+
+# The syntax for the key is space or tab delimited:
+
+# Column 1: target name
+# Column 2: working directory name
+
+# In PHANGS-ALMA the convention is to map parts to a working directory
+# with the name of the full galaxy. For example:
+
+#circinus_1       circinus
+#circinus_2       circinus
+
+##########################################################################
+
+# DELETE AFTER HERE FOR NEW PROJECT, FULL PHANGS-ALMA CASE FOLLOWS
+
+IC342	IC342
+IC342_1 IC342
+IC342_2 IC342
+IC342_3 IC342
+IC342_4 IC342
+IC342_5 IC342
+NGC1961	NGC1961
+NGC2787	NGC2787
+NGC3147	NGC3147
+NGC3227	NGC3227
+NGC3596	NGC3596
+NGC3608	NGC3608
+NGC3631	NGC3631
+NGC3640	NGC3640
+NGC3898	NGC3898
+NGC3941	NGC3941
+NGC3953	NGC3953
+NGC4030	NGC4030
+NGC4038	NGC4038
+NGC4051	NGC4051
+NGC4125	NGC4125
+NGC4244	NGC4244
+NGC4365	NGC4365
+NGC4374	NGC4374
+NGC4380	NGC4380
+NGC4450	NGC4450
+NGC4477	NGC4477
+# NGC4486	NGC4486
+NGC4494	NGC4494
+NGC4496A	NGC4496A
+NGC4501	NGC4501
+NGC4535	NGC4535
+NGC4552	NGC4552
+NGC4568	NGC4568
+NGC4596	NGC4596
+NGC4636	NGC4636
+NGC4649	NGC4649
+NGC4651	NGC4651
+NGC4654	NGC4654
+NGC4689	NGC4689
+NGC4772	NGC4772
+NGC4941	NGC4941
+NGC5427	NGC5427
+NGC5728	NGC5728
+NGC7479	NGC7479

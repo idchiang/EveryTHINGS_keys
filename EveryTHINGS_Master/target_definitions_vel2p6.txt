@@ -1,0 +1,70 @@
+##########################################################################
+# TARGET DEFINITION KEY
+##########################################################################
+
+# Key to define the targets in a project.
+
+# In the ms_key each measurement set is mapped to a target. This key
+# defined targets according to their phase center, systemic velocity
+# and velocity width. These are used in processing the u-v data and
+# then imaging the data.
+
+# The syntax for the key is space or tab delimited:
+
+# Column 1: target name
+# Column 2: phase center r.a. string
+# Column 3: phase center dec string
+# Column 4: source velocity [km/s]
+# Column 5: velocity width [km/s]
+
+# Note that the phase center isn't the same as the object center. This
+# is an importnat distinction mainly in the case of mosaics that cover
+# only part of the object (our linear mosaic cases..
+
+# PHANGS-ALMA examples:
+
+#circinus     14h13m10.0s   -65d20m21s    429    700
+#circinus_1   14h12m58.4s   -65d21m43s    429    700
+#circinus_2   14h13m17.1s   -65d19m24s    429    700
+#ic1954       03h31m31.4s   -51d54m17s    1062   500
+#ngc3621      11h18m16.5s   -32d48m51s    730    700
+#ngc3621_1    11h18m18.3s   -32d49m47s    730    700
+#ngc3621_2    11h18m15.0s   -32d48m06s    730    700
+
+##########################################################################
+
+# DELETE AFTER HERE FOR NEW PROJECT, FULL PHANGS-ALMA CASE FOLLOWS
+
+# Postpone
+IC342	3h46m48.5s	68d5m45.9s	25.0	300
+IC342_1	3h46m48.5s	68d5m45.9s	-75.0	120
+IC342_2	3h46m48.5s	68d5m45.9s	25.0	120
+IC342_3	3h46m48.5s	68d5m45.9s	125.0	120
+# IC342_4	3h46m48.5s	68d5m45.9s	125.0	150
+# IC342_5	3h46m48.5s	68d5m45.9s	225.0	150
+
+# Done
+NGC2787	9h19m18.4s	69d12m11.9s	696.8	400
+NGC3227	10h23m30.6s	19d51m53.9s	1128.6	600
+NGC3608	11h16m59.0s	18d8m55.0s	1210.9	600
+NGC3898	11h49m15.3s	56d5m3.7s	1173.0	550
+NGC3941	11h52m55.4s	36d59m10.8s	914.2	400
+NGC4038	12h1m53.0s	-18d52m5.6s	1634.0	500
+NGC4125	12h8m6.0s	65d10m27.0s	1389.0	600
+NGC4244	12h17m29.5s	37d48m28.1s	245.2	700
+NGC4365	12h24m28.1s	7d19m0.3s	1221.0	600
+NGC4374	12h25m3.7s	12d53m13.6s	999.2	600
+NGC4477	12h30m2.2s	13d38m11.1s	1357.9	600
+NGC4494	12h31m24.0s	25d46m29.9s	1320.1	600
+NGC4496A	12h31m39.3s	3d56m22.6s	1719.0	400
+NGC4501	12h31m59.3s	14d25m12.1s	2281.5	620
+NGC4535	12h34m20.3s	8d11m52.7s	1949.9	350
+NGC4552	12h35m39.8s	12d33m22.5s	323.1	600
+NGC4596	12h39m55.9s	10d10m34.2s	1878.9	600
+NGC4636	12h42m49.7s	2d41m19.3s	925.3	600
+NGC4649	12h43m40.0s	11d33m9.7s	1107.3	600
+NGC4772	12h53m29.2s	2d10m6.1s	1038.2	550
+
+# Postpone
+# NGC5728	14h42m23.9s	-17d15m10.8s	2788.2	700
+

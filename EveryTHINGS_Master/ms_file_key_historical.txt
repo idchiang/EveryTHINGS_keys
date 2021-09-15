@@ -1,0 +1,120 @@
+##########################################################################
+# MEASUREMENT SET FILE/INPUT KEY
+##########################################################################
+
+# Key to define files of input visibility data.
+
+# The pipeline begins with calibrated visibility data, which are
+# defined in this file. In this key, each measurement set (column 4)
+# is mapped to an individual target, project, array tag, and numerical
+# tag ('multiobs' suffix).
+ 
+# The syntax for the key is space or tab delimited:
+ 
+# Column 1: target name
+# Column 2: project tag
+# Column 3: science field name ("all" is fine)
+# Column 4: array tag (7m, C, etc.)
+# Column 5: observation number
+# Column 6: file with path relative to an ms_root
+
+# The paths are relative to ANY ms_root directory defined in the
+# master key.
+
+# The targets need to map to the target definitions, and the array
+# tags need to mesh with the config definitions.
+
+# The project tag should probably be the VLA or ALMA project code or
+# something similar.
+ 
+# PHANGS-ALMA examples:
+
+#circinus_1     2018.1.01321 	all  7m	  1	2018.1.01321.S/science_goal.uid___A001_X133d_X3c35/group.uid___A001_X133d_X3c36/member.uid___A001_X133d_X3c37/calibrated/uid___A002_Xd845af_Xa5a9.ms
+
+#circinus_2     2018.1.01321	all  7m	  2	2018.1.01321.S/science_goal.uid___A001_X133d_X3c2f/group.uid___A001_X133d_X3c30/member.uid___A001_X133d_X3c31/calibrated/uid___A002_Xd845af_Xab60.ms
+
+#
+##########################################################################
+
+# DELETE AFTER HERE FOR NEW PROJECT, EXAMPLE PHANGS-ALMA CASE FOLLOWS
+
+# NGC1961_1	AS750	all	D	1	historic_vla/AS750_A/AS750_A.ms
+# NGC1961_1	AS787	all	BC	1	historic_vla/AS787_A/AS787_A.ms
+# NGC1961_2	AS750	all	D	1	historic_vla/AS750_A/AS750_A.ms
+# NGC1961_2	AS787	all	BC	1	historic_vla/AS787_A/AS787_A.ms
+# NGC1961_3	AS750	all	D	1	historic_vla/AS750_A/AS750_A.ms
+# NGC1961_3	AS787	all	BC	1	historic_vla/AS787_A/AS787_A.ms
+# NGC1961_4	AS750	all	D	1	historic_vla/AS750_A/AS750_A.ms
+# NGC1961_4	AS787	all	BC	1	historic_vla/AS787_A/AS787_A.ms
+# NGC1961_5	AS750	all	D	1	historic_vla/AS750_A/AS750_A.ms
+# NGC1961_5	AS787	all	BC	1	historic_vla/AS787_A/AS787_A.ms
+NGC1961	AS750	all	D	1	historic_vla/AS750_A/AS750_A.ms
+NGC1961	AS787	NGC1961_1	BC	1	historic_vla/AS787_A/AS787_A.ms
+NGC1961	AS787	NGC1961_2	BC	2	historic_vla/AS787_A/AS787_A.ms
+
+NGC3147	AV170	N3147	D	1	historic_vla/AV170_A/AV170_A.ms
+NGC3147	AB1069	NGC3147	D	1	historic_vla/AB1069_A/AB1069_A.ms
+NGC3147	AS750	NGC3147	D	1	historic_vla/AS750_B/AS750_B.ms
+
+NGC3596	AK471	NGC3596	C	1	historic_vla/AK471_B/AK471_B.ms
+
+NGC3631	AW588	NGC3631	C	1	historic_vla/AW588_A/AW588_A.ms
+NGC3631	AW588	NGC3631	C	2	historic_vla/AW588_B/AW588_B.ms
+
+NGC3640	AS620	NGC3640	D	1	historic_vla/AS620_A/AS620_A.ms
+
+NGC3953	AB651	N3953	D	1	historic_vla/AB651_B/AB651_B.ms
+
+NGC4030	AB947	N4030	C	1	historic_vla/AB947_A/AB947_A.ms
+# Bad data
+# NGC4030	AB651	N4030	D	1	historic_vla/AB651_B/AB651_B.ms
+
+NGC4051	AP270	NGC4051	C	1	historic_vla/AP270_A/AP270_A.ms
+
+# Bad data
+# NGC4244	AB525	NGC4244	C	1	historic_vla/AB525_N/AB525_N.ms
+# Pipeline errors
+# NGC4244	AB525	N4244	BC	1	historic_vla/AB525_J/AB525_J.ms
+# NGC4244	AB525	N4244	D	1	historic_vla/AB525_L/AB525_L.ms
+# NGC4244NE	AB525	N4244NE	D	1	historic_vla/AB525_L/AB525_L.ms
+# NGC4244E	AB525	N4244E	D	1	historic_vla/AB525_L/AB525_L.ms
+# NGC4244SE	AB525	N4244SE	D	1	historic_vla/AB525_L/AB525_L.ms
+# NGC4244SW	AB525	N4244SW	D	1	historic_vla/AB525_L/AB525_L.ms
+# NGC4244W	AB525	N4244W	D	1	historic_vla/AB525_L/AB525_L.ms
+# NGC4244NW	AB525	N4244NW	D	1	historic_vla/AB525_L/AB525_L.ms
+# NGC4244	AO109	N4244	D	2	historic_vla/AO109_A/AO109_A.ms
+
+NGC4380	AK563	N4380	C	1	historic_vla/AK563_T/AK563_T.ms
+
+NGC4450	AK563	N4450	C	1	historic_vla/AK563_N/AK563_N.ms
+
+# M87. Skip.
+# NGC4486	AY128	1230+123	D	1	historic_vla/AY128_A/AY128_A.ms
+
+# NGC4501	AG318	N4501	C	1	historic_vla/AG318_A/AG318_A.ms
+
+# Bad data
+# NGC4535	AG318	N4535	C	1	historic_vla/AG318_A/AG318_A.ms
+# NGC4535	AR302	NGC4535	D	1	historic_vla/AR302_A/AR302_A.ms
+
+NGC4568	AI102	all	C	1	historic_vla/AI102_A/AI102_A.ms
+NGC4568	AK563	all	C	1	historic_vla/AK563_P/AK563_P.ms
+
+NGC4651	AK563	N4651	C	1	historic_vla/AK563_C/AK563_C.ms
+# NGC4651	AC294	N4651	D	1	historic_vla/AC294_A/AC294_A.ms
+
+NGC4654	AP206	NGC4654	C	1	historic_vla/AP206_A/AP206_A.ms
+NGC4654	AP206	NGC4654	D	1	historic_vla/AP206_C/AP206_C.ms
+
+NGC4689	AN119	N4689	C	1	historic_vla/AN119_A/AN119_A.ms
+
+# NGC4772	AB728	NGC4772	C	1	historic_vla/AB728_B/AB728_B.ms
+# NGC4772	AK563	N4772	C	1	historic_vla/AK563_Q/AK563_Q.ms
+
+NGC4941	AM834	NGC4941	C	1	historic_vla/AM834_A/AM834_A.ms
+
+NGC5427	AM788	NGC5427	C	1	historic_vla/AM788_C/AM788_C.ms
+
+NGC7479	AK229	NGC7479	BC	1	historic_vla/AK229_A/AK229_A.ms
+NGC7479	AL324	NGC7479	D	1	historic_vla/AL324_C/AL324_C.ms
+

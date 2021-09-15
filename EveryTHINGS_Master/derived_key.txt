@@ -1,0 +1,63 @@
+##########################################################################
+# DERIVED PRODUCT DEFINITION KEY
+##########################################################################
+
+# This key defines the final science products derived by the pipeline.
+
+# Column 1: configuration name (e.g., 12m+7m, 7m+tp, etc.)
+# "all" is an acceptable wildcard.
+
+# Column 2: spectral product name
+# "all" is an acceptable wildcard.
+
+# Column 3: field being defined
+
+# Column 4: values
+
+# FIELDS
+
+# phys_res - target physical resolutions in parsecs. Format is a a set
+# of 'tag':value pairs in which the value is the parsec target and the
+# tag is the tag to insert into filenames.
+
+# ang_res - target angular resolutions in arcseconds. Format is a a
+# set of 'tag':value pairs in which the value is the arcsecond target
+# and the tag is the tag to insert into filenames.
+
+# mask_configs - the names of other configurations to check for
+# masks. Masks from these configurations will be used as part of the
+# hybrid masking step of the pipeline.
+
+# moments - list of moments (defined in the moment key) to calculate
+# for that config.
+
+##########################################################################
+
+# mask_configs
+# noise_kw
+# convolve_kw
+
+all		all	convolve_kw	{}
+
+all		hi21cm_2p6kms	noise_kw	{'spec_box':3,'iterations':3}
+all		hi21cm_5p2kms	noise_kw	{'spec_box':2,'iterations':3}
+all		hi21cm_10p4kms	noise_kw	{'spec_box':1,'iterations':3}
+all		hi21cm_20p8kms	noise_kw	{'spec_box':1,'iterations':3}
+
+all		all	broadmask_kw	{}
+
+# all		all	strictmask_kw	{'hi_thresh':3.0,'hi_nchan':1,'lo_thresh':2.0}
+all		all	strictmask_kw	{'hi_thresh':3.0,'hi_nchan':2,'lo_thresh':2.0}
+all		all	strictmask_kw	{'grow_xy':1,'grow_v':1}
+all     all strictmask_kw   {'min_beams':1.0}
+# all		all	strictmask_kw	{'min_pix':None,'min_area':None}
+all		hi21cm_2p6kms	strictmask_kw	{'lo_nchan':3}
+all		hi21cm_5p2kms	strictmask_kw	{'lo_nchan':2}
+all		hi21cm_10p4kms	strictmask_kw	{'lo_nchan':1}
+all		hi21cm_20p8kms	strictmask_kw	{'lo_nchan':1}
+
+all		all	ang_res		{'gauss50':50.0}
+
+all		all	moments		['broadmom0']
+
+
